@@ -2,7 +2,7 @@ export type Product = {
   id: string;
   brand: string;
   description: string;
-  proceO: number;
+  priceO: number;
   priceR?: number | null;
   url: string;
   images?: string[] | null;

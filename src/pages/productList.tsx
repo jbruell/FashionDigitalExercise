@@ -1,26 +1,4 @@
-import { ProductCard } from "components/ProductCard";
-import { Product } from "model/product";
-
-export type ProductListProps = {
-  data?: Product[];
-  status: number;
-};
-
-export default function ProductList(props: ProductListProps): JSX.Element {
-  const { data, status } = props;
-
-  if (!data || status !== 200) {
-    return <div>Something went wrong: Status {status}</div>;
-  }
-
-  return (
-    <div>
-      {data.map((product) => (
-        <ProductCard key={product.id} product={product} />
-      ))}
-    </div>
-  );
-}
+export { default } from "components/ProductList";
 
 export async function getServerSideProps() {
   /*
