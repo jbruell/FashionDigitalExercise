@@ -1,10 +1,11 @@
 {
   "name": "fashion-digital-exercise",
+  "author": "Janik Brüll",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "yarn && next build && next start",
     "lint": "eslint src",
     "lintfix": "eslint --fix src"
   },
