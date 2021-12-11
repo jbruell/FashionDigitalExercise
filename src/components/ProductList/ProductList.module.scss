@@ -1,24 +1,35 @@
 .Wrapper {
     max-width: 1600px;
-    margin: 0 auto;
+    margin: 2rem auto;
     padding: 1rem;
 
-    .FilterCard {
-        background-color: white;
-        margin: 0 auto 1.5rem;
-        padding: 1rem;
-        border-radius: 0.75rem;
-        box-shadow: 0px 3px 11px 1px #00000020;
-        max-width: 26rem;
+    .Controls {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min-content, 26rem));
+        justify-content: center;
+        gap: 1.5rem;
+        margin-bottom: 4rem;
 
-        .OperatorToggleWrapper {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 1rem 0;
+        .Card {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 0.75rem;
+            box-shadow: 0px 3px 11px 1px #00000020;
 
-            .MuiSwitch-root {
-                margin-top: 0.25rem;
+            h3 {
+                text-align: center;
+                margin-top: 0;
+            }
+
+            .OperatorToggleWrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 1rem 0;
+
+                .MuiSwitch-root {
+                    margin-top: 0.25rem;
+                }
             }
         }
     }
