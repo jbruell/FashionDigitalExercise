@@ -8,7 +8,7 @@ export async function getServerSideProps() {
   const res = await fetch(
     "https://s3-eu-west-1.amazonaws.com/fid-recruiting/fid-task-4-ffront-products.json"
   );
-  const data = await res.json();
+  const data = res.ok ? await res.json() : null;
   return {
     props: {
       data: data,
