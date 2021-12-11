@@ -1,0 +1,9 @@
+.Wrapper {
+    display: flex;
+    justify-content: center;
+    .ButtonGroup {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 0.25rem;
+    }
+}

@@ -6,16 +6,5 @@ export type Product = {
   priceR?: number | null;
   url: string;
   images?: string[] | null;
-  sizes?: Size[] | null;
+  sizes?: string[] | null;
 };
-
-export type Size =
-  | number
-  | "XXS"
-  | "XS"
-  | "S"
-  | "M"
-  | "L"
-  | "XL"
-  | "XXL"
-  | "XXXL";
