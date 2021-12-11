@@ -4,7 +4,7 @@ import ProductPrice from "components/ProductPrice";
 
 export default function ProductCard(props: ProductCardProps): JSX.Element {
   const {
-    product: { id, brand, description, priceO, priceR, url, images, sizes },
+    product: { brand, description, priceO, priceR, images },
   } = props;
 
   return (

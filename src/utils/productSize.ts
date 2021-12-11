@@ -26,7 +26,7 @@ export function filterSize(
       const parsedSize = parseInt(size);
       const matchesToggleOption =
         sizeToggleOptions.length <= 0 ||
-        (sizeToggleOption.hasOwnProperty(size) &&
+        (Object.prototype.hasOwnProperty.call(sizeToggleOption, "size") &&
           sizeToggleOptions.includes(size as SizeToggleOption));
       const matchesRange =
         !sizeRange ||
